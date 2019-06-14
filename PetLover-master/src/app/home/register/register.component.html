@@ -1,0 +1,30 @@
+<mat-card class="mat-elevation-z8">
+  <h3>Register</h3>
+  <form class="form-container">
+    <mat-form-field color="accent">
+      <input matInput placeholder="Name">
+    </mat-form-field>
+
+    <mat-form-field color="accent">
+      <input matInput placeholder="Mobile" type="number">
+    </mat-form-field>
+
+    <mat-form-field color="accent">
+      <input matInput placeholder="Age" type="number">
+    </mat-form-field>
+
+    <mat-radio-group>
+      <mat-radio-button value="male">Male</mat-radio-button>
+      <mat-radio-button value="female">Female</mat-radio-button>
+      <mat-radio-button value="other">Other</mat-radio-button>
+    </mat-radio-group>
+    <br>
+
+    <div>
+      <button mat-raised-button type="submit" color="accent">Register</button>
+    </div>
+  </form>
+  <br>
+  <span>Already have an account? <a routerLink="/login">Login</a></span>
+  <app-footer></app-footer>
+</mat-card>

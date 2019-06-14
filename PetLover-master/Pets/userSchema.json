@@ -1,0 +1,11 @@
+
+
+{
+  "_id": "",
+  "name": "name",
+  "mobile": "mobilenumber",
+  "addresses": "full address",
+  "age": "age",
+  "gender": "22",
+  "registeredOn": "registered date"
+}

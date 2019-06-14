@@ -1,0 +1,60 @@
+
+
+//
+
+
+ - contains homepage with video running on background.
+
+      "Here we keep your best memory safe with us"
+
+ - homepage contains login or register first
+ - after login all routes are visible.
+
+
+ - header {
+
+	// Left Side
+	- home,
+	- top viewed,
+
+	// Center
+
+	- Logo of brand
+
+	// Right Side
+
+	- Upload
+	- Name : home-button
+	
+
+   }
+
+//
+
+
+// Home 
+
+{
+  // Contains list of recent uploaded videos
+       contains Titles -> {"name, uploded-date, then Video"}
+}
+
+// Top Viewed
+
+{
+ // Contains list of most liked videos
+       contains Titles -> {"name, uploded-date, then Video"}
+}
+
+// Uploads
+{
+	upload the video with title name
+}
+
+// Name: menu button
+
+{
+	//contains
+	{home, profile, logout}
+}
+

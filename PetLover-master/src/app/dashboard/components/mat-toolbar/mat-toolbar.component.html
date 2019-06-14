@@ -1,0 +1,77 @@
+<mat-toolbar color="accent">
+  <button mat-button class="sidenav-toggle" (click)="toogleSidenav.emit()">
+    <mat-icon>
+      menu
+    </mat-icon>
+  </button>
+  <span><a routerLink="/home"><img src="../../../../assets/Images/logo1.png"></a></span>
+  <span class="span"></span>
+
+
+  <!--notifications-->
+  <button mat-button [matMenuTriggerFor]="notification"><mat-icon>add_alert</mat-icon></button>
+  <mat-menu #notification="matMenu" [overlapTrigger]="false" class="my-full-width-menu">
+    <button mat-menu-item class="notification">Notification</button>
+
+    <button mat-menu-item style="white-space: normal" *ngFor="let notification of notifications">
+      <div class="row" style="margin: 5px">
+        <div class="round">
+          <img src="../../../../assets/Images/rup.jpg">
+        </div>
+        <div style="margin: 0 15px; line-height: 18px">
+          <a routerLink="#">{{notification.user.name}}</a> commented on your pics commented on your pics on your pics
+        </div>
+        <div class="rect">
+          <img src="../../../../assets/Images/cat.png">
+        </div>
+      </div>
+    </button>
+  </mat-menu>
+
+  <!--messages-->
+  <button mat-button [matMenuTriggerFor]="message"><mat-icon>message</mat-icon></button>
+  <mat-menu #message="matMenu" [overlapTrigger]="false" class="my-full-width-menu">
+    <button mat-menu-item class="notification">Messages</button>
+    <button mat-menu-item style="white-space: normal" *ngFor="let notification of notifications">
+      <div class="row" style="margin: 5px">
+        <div class="round">
+          <img src="../../../../assets/Images/rup.jpg">
+        </div>
+        <div style="margin: 0 15px; line-height: 18px">
+          <a routerLink="#">{{notification.user.name}}</a> commented on your pics commented on your pics on your pics
+        </div>
+        <div class="rect">
+          <img src="../../../../assets/Images/cat.png">
+        </div>
+      </div>
+    </button>
+    <button mat-menu-item style="white-space: normal" *ngFor="let notification of notifications">
+      <div class="row" style="margin: 5px">
+        <div class="round">
+          <img src="../../../../assets/Images/rup.jpg">
+        </div>
+        <div style="margin: 0 15px; line-height: 18px">
+          <a routerLink="#">{{notification.user.name}}</a> commented on your pics commented on your pics on your pics
+        </div>
+        <div class="rect">
+          <img src="../../../../assets/Images/cat.png">
+        </div>
+      </div>
+    </button>
+    <button mat-menu-item style="white-space: normal" *ngFor="let notification of notifications">
+      <div class="row" style="margin: 5px">
+        <div class="round">
+          <img src="../../../../assets/Images/rup.jpg">
+        </div>
+        <div style="margin: 0 15px; line-height: 18px">
+          <a routerLink="#">{{notification.user.name}}</a> commented on your pics commented on your pics on your pics
+        </div>
+        <div class="rect">
+          <img src="../../../../assets/Images/cat.png">
+        </div>
+      </div>
+    </button>
+  </mat-menu>
+
+
+</mat-toolbar>

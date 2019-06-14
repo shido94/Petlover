@@ -1,0 +1,35 @@
+
+mat-card{
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+video{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+.likes:hover{
+  color: #ff4081;
+}
+
+.likes{
+  background-color: #FFF3F7;
+}
+
+
+.round {
+  height: 40px;
+  width: 40px;
+  text-align: left;
+  justify-content: left;
+}
+
+.round img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}

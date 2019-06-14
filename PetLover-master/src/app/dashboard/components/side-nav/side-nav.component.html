@@ -1,0 +1,44 @@
+
+<mat-sidenav-container class="app-sidenav-container">
+
+  <mat-sidenav class="app-sidenav mat-elevation-z10"
+               [opened]="!isScreenSmall()"
+               [mode]="isScreenSmall() ? 'over': 'side'"
+               #sidenav>
+
+    <mat-toolbar color="accent">
+      <mat-card-header>
+        <div mat-card-avatar class="round">
+          <a routerLink="/home/user"><img src="../../../../assets/Images/rup.jpg"></a>
+        </div>
+        <mat-card-title><h3><b><a routerLink="/home/user">Rupesh</a></b></h3></mat-card-title>
+      </mat-card-header>
+    </mat-toolbar>
+
+    <mat-nav-list>
+
+      <a mat-list-item [routerLink]=[link.url] *ngFor="let link of links">
+        <span>
+          {{link.name}}
+        </span>
+        <span style="flex-basis: 100%"></span>
+        <span style="margin-right: 50px">
+          <mat-icon>
+            video_label
+          </mat-icon>
+        </span>
+
+      </a>
+    </mat-nav-list>
+
+  </mat-sidenav>
+
+
+  <div class="app-sidenav-content">
+    <app-mat-toolbar (toogleSidenav)="sidenav.toggle()"></app-mat-toolbar>
+    <div class="wrapper" [style.margin]="isScreenSmall() ? '40px 5px 40px 5px': '40px'">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</mat-sidenav-container>

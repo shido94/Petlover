@@ -1,0 +1,12 @@
+
+{
+  "_id": "",
+  "titles": "",
+  "VideosLink": "",
+  "totalLikes": {
+    "_id": "",
+    "userId": ["userId1","userId2"]
+  },
+  "totalComment": "length of comment on this _id",
+  "uploadedDates": ""
+}

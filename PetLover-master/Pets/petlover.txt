@@ -1,0 +1,34 @@
+www.petlover.com
+
+User -
+
+{
+
+ - can submit video of their pets with the title name.
+ - can see theirs and others pets videos.
+ - can likes others videos.
+ - can downloads all videos.
+ 
+
+// later 
+{
+
+ - can message to a particular user for negotiating.
+}
+//
+
+}
+
+
+Admin - 
+
+{
+
+ - can delete and review videos.
+ - can see all registerd videos.
+ - can delete unappropriate video.
+
+}
+
+
+

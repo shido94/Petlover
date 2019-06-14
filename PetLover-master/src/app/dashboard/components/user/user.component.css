@@ -1,0 +1,114 @@
+mat-grid-tile {
+  background: lightblue;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-rows: 60% auto 60%;
+}
+
+.container{
+  margin-top: 100px;
+}
+
+a{
+  text-decoration: none;
+  color: #ff4081;
+}
+
+#round img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+#round{
+  text-align: center;
+  justify-content: center;
+  height: 10%;
+}
+
+#round img:hover{
+  box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
+}
+
+video{
+  width: 100%;
+}
+
+img{
+  width: 100%;
+}
+
+.sample-div {
+  height: 100%;
+  width: 100%;
+}
+
+.mat-tab-group {
+  margin-bottom: 48px;
+}
+
+.mat-tab-group mat-tab{
+  box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
+}
+
+/*align center*/
+
+.center{
+  text-align: center;
+  margin-top: 10px;
+}
+
+/*tabs panel css*/
+
+/* active tab */
+::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
+  color:white;
+  background-color: #ff4081;
+}
+
+::ng-deep .mat-tab-list .mat-tab-labels {
+  color:white;
+  background-color: #FFF3F7;
+}
+
+/* ink bar */
+::ng-deep .mat-ink-bar {
+  background-color: #ff4081;
+}
+
+.tab-border{
+  margin-top: 20px;
+  /*border: 1px solid red;*/
+}
+
+.name {
+  word-break: break-word;
+}
+
+.name p{
+  /*display: flex;*/
+  /*justify-content: center;*/
+  overflow-wrap: break-word;
+  width: 100%;
+  /*flex-wrap: wrap;*/
+  font-size: 2em;
+  color: #257089;
+  margin-top: 10px
+}
+
+.width{
+  width: 100%;
+  height: 100%;
+}
+
+.profile p{
+  margin-right: 15px;
+}
+
+table {
+  width: 100%;
+}

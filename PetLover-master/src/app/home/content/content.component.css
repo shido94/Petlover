@@ -1,0 +1,56 @@
+
+/*video data*/
+
+.animated{
+  color: white;
+}
+
+.landing {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.landing video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  object-fit: cover;
+}
+.landing .dim {
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: black;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.landing .text {
+  position: relative;
+  top: calc(20% - 2em);
+  text-align: center;
+  font-size: calc( 2.225rem + (4.5 - 2.225) * ((40vw - 20rem) / (48 - 20)));
+}
+
+/*button*/
+
+button {
+  border-radius: 20px;
+  width: 100px;
+  background-color: red;
+  color: white;
+}
+
+button:hover {
+  color: white;
+  background-color: #ff4081;
+}

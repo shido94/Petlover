@@ -1,0 +1,10 @@
+
+// reply Schema
+
+{
+  "_id": "",
+  "commentID": "_id of comment schema",
+  "reply": "text on above comment",
+  "repliedOd": "reply",
+  "userId": "userID"
+}

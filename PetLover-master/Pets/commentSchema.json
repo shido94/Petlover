@@ -1,0 +1,11 @@
+
+
+//comment Schema
+
+{
+  "_id": "",
+  "discussionId": "id of video on which user is commenting",
+  "comment": "any text",
+  "commentedOnDate": "date",
+  "UserId": "fromTokenSession"
+}

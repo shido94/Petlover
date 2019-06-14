@@ -1,0 +1,154 @@
+
+<div fxLayout="row" fxLayout.xs="column" fxLayoutGap="5px" fxLayoutAlign.xs="center center" fxLayoutWrap>
+
+  <mat-card class="sample-div">
+      <mat-card-content id="round">
+        <img mat-card-image  src="../../../../assets/Images/rup.jpg" alt="Card image cap">
+        <div class="name">
+          <p>Rupesh Yadav <a routerLink="/home/profile"><mat-icon>edit</mat-icon></a></p>
+        </div>
+        <p style="color: black">Male, <span style="font-weight: 900">10</span></p>
+        <button mat-raised-button routerLink="/home/message" color="accent">
+          Message
+        </button>
+      </mat-card-content>
+    </mat-card>
+
+  <mat-card class="sample-divs">
+
+    <mat-tab-group mat-align-tabs="start">
+
+      <!--user profile-->
+
+      <mat-tab label="Profile">
+
+        <div class="profile">
+          <div class="row">
+            <p><b>Name: </b></p>
+            <p>Rupesh Yadav</p>
+          </div>
+
+          <div class="row">
+            <p><b>Age: </b></p>
+            <p>22</p>
+          </div>
+
+          <div class="row">
+            <p><b>Mobile: </b></p>
+            <p>7455969734</p>
+          </div>
+
+          <div class="row">
+            <p><b>Gender: </b></p>
+            <p>Male</p>
+          </div>
+
+          <div class="row">
+            <p><b>Bio: </b></p>
+            <p>
+              Prefer to date #nodejs or #javascript as they are good at "Promise".
+              “If you want to create history, never browse internet in incognito mode :-) ”
+            </p>
+          </div>
+        </div>
+
+      </mat-tab>
+
+
+      <!--uploaded videos Tabs-->
+
+      <mat-tab label="Uploaded Videos">
+
+        <div class="center">
+          Total Videos: 3
+          <div class="tab-border">
+            <hr>
+            <mat-card-title style="text-align: left">The cute cat and dog</mat-card-title>
+            <mat-card-subtitle style="text-align: left;">April,12,2018</mat-card-subtitle>
+            <mat-card-content class="margin">
+              <div class="video">
+                <video controls (click)="toggleVideo()" #videoPlayer>
+                  <source src="../../../../assets/Video/Cat%20.mp4" type="video/mp4" />
+                  Browser not supported
+                </video>
+              </div>
+            </mat-card-content>
+            <hr>
+          </div>
+          <div class="tab-border">
+            <hr>
+            <mat-card-title style="text-align: left">The cute cat and dog</mat-card-title>
+            <mat-card-subtitle style="text-align: left;">April,12,2018</mat-card-subtitle>
+            <mat-card-content class="margin">
+              <div class="video">
+                <video controls (click)="toggleVideo()" #videoPlayer>
+                  <source src="../../../../assets/Video/Cat%20.mp4" type="video/mp4" />
+                  Browser not supported
+                </video>
+              </div>
+            </mat-card-content>
+            <hr>
+          </div>
+          <div class="tab-border">
+            <hr>
+            <mat-card-title style="text-align: left">The cute cat and dog</mat-card-title>
+            <mat-card-subtitle style="text-align: left;">April,12,2018</mat-card-subtitle>
+            <mat-card-content class="margin">
+              <div class="video">
+                <video controls (click)="toggleVideo()" #videoPlayer>
+                  <source src="../../../../assets/Video/Cat%20.mp4" type="video/mp4" />
+                  Browser not supported
+                </video>
+              </div>
+            </mat-card-content>
+            <hr>
+          </div>
+        </div>
+      </mat-tab>
+
+      <!--Liked videos Tabs-->
+
+      <mat-tab label="Liked Videos">
+        <div class="center">
+          Total Videos: 2
+
+          <!--<mat-card>-->
+          <div class="tab-border">
+            <hr>
+            <mat-card-title style="text-align: left">The cute cat and dog</mat-card-title>
+            <mat-card-subtitle style="text-align: left;">April,12,2018</mat-card-subtitle>
+            <mat-card-content class="margin">
+              <div class="video">
+                <video controls (click)="toggleVideo()" #videoPlayer>
+                  <source src="../../../../assets/Video/Cat%20.mp4" type="video/mp4" />
+                  Browser not supported
+                </video>
+              </div>
+            </mat-card-content>
+            <hr>
+          </div>
+          <div class="tab-border">
+            <hr>
+            <mat-card-title style="text-align: left">The cute cat and dog</mat-card-title>
+            <mat-card-subtitle style="text-align: left;">April,12,2018</mat-card-subtitle>
+            <mat-card-content class="margin">
+              <div class="video">
+                <video controls (click)="toggleVideo()" #videoPlayer>
+                  <source src="../../../../assets/Video/Cat%20.mp4" type="video/mp4" />
+                  Browser not supported
+                </video>
+              </div>
+            </mat-card-content>
+            <hr>
+          </div>
+        </div>
+      </mat-tab>
+
+    </mat-tab-group>
+
+  </mat-card>
+
+
+</div>
+
+
